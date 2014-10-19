@@ -21,7 +21,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <BuildNr Value="119"/>
+      <BuildNr Value="128"/>
       <StringTable CompanyName="WarZone MU" OriginalFilename="mu.exe" ProductName="mu.exe" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="3">
@@ -124,6 +124,7 @@
         <ComponentName Value="frmMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mainui"/>
       </Unit1>
       <Unit2>
         <Filename Value="ui\settingsui.pas"/>

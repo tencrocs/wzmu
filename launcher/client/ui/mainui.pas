@@ -322,7 +322,9 @@ begin
      Cursor := crHourGlass; // busy mouse pointer
      //WindowState := wsMinimized;
      ShellExecute(0,nil, PChar(wzexe),PChar(''),PChar(''),1); // run main.exe
-     Close;
+     //WindowState := wsMinimized;
+     application.Minimize;
+     //Close;
   end
   else
       //ShowMessage('Unable to find file - ' + wzexe);
