@@ -1,0 +1,6 @@
+launcher/client/lib/
+launcher/client/temp/
+launcher/client/bin/
+launcher/client/release/*.exe
+
+*.bak 

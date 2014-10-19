@@ -1,0 +1,28 @@
+object frmDebug: TfrmDebug
+  Left = 385
+  Height = 307
+  Top = 235
+  Width = 583
+  Caption = 'Launcher::Debug'
+  ClientHeight = 307
+  ClientWidth = 583
+  OnShow = FormShow
+  Position = poDefaultPosOnly
+  LCLVersion = '1.3'
+  object MemoLog: TMemo
+    Left = 0
+    Height = 307
+    Top = 0
+    Width = 583
+    Align = alClient
+    Color = clBlack
+    Font.Color = clGreen
+    Lines.Strings = (
+      'MemoLog'
+    )
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+end

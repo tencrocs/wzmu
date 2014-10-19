@@ -1,0 +1,229 @@
+object frmMain: TfrmMain
+  Left = 368
+  Height = 281
+  Top = 243
+  Width = 635
+  BorderStyle = bsNone
+  Caption = 'warzonemu.com'
+  ClientHeight = 281
+  ClientWidth = 635
+  Color = 4473924
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.3'
+  object imgAds: TImage
+    Left = 234
+    Height = 116
+    Top = 24
+    Width = 120
+    OnMouseDown = imgAdsMouseDown
+    OnMouseMove = imgAdsMouseMove
+    Stretch = True
+  end
+  object imgBG: TImage
+    Left = 18
+    Height = 128
+    Top = 18
+    Width = 204
+    OnMouseDown = imgBGMouseDown
+    OnMouseMove = imgBGMouseMove
+  end
+  object imgStartGameYellow: TImage
+    Left = 450
+    Height = 47
+    Top = 138
+    Width = 156
+    AutoSize = True
+    Visible = False
+  end
+  object imgCloseOn: TImage
+    Left = 378
+    Height = 15
+    Top = 24
+    Width = 16
+    AutoSize = True
+    Visible = False
+  end
+  object imgCloseOff: TImage
+    Left = 396
+    Height = 15
+    Top = 24
+    Width = 16
+    AutoSize = True
+    OnMouseEnter = imgCloseMouseEnter
+    OnMouseLeave = imgCloseMouseLeave
+    Visible = False
+  end
+  object imgStartGameCyan: TImage
+    Left = 450
+    Height = 47
+    Top = 204
+    Width = 156
+    AutoSize = True
+    OnClick = imgStartGameClick
+    Visible = False
+  end
+  object imgWindowModeON: TImage
+    Left = 378
+    Height = 15
+    Hint = 'Window mode is active!'
+    Top = 60
+    Width = 16
+    AutoSize = True
+    ParentShowHint = False
+    ShowHint = True
+    Visible = False
+  end
+  object imgWindowModeOFF: TImage
+    Left = 396
+    Height = 15
+    Hint = 'Window mode is inactive!'
+    Top = 60
+    Width = 16
+    AutoSize = True
+    ParentShowHint = False
+    ShowHint = True
+    Visible = False
+  end
+  object imgStartGameGray: TImage
+    Left = 450
+    Height = 47
+    Top = 78
+    Width = 156
+    AutoSize = True
+    OnClick = imgStartGameClick
+    Visible = False
+  end
+  object imgClose: TImage
+    Cursor = crHandPoint
+    Left = 414
+    Height = 15
+    Hint = 'Close'
+    Top = 24
+    Width = 16
+    AutoSize = True
+    OnClick = imgCloseClick
+    OnMouseEnter = imgCloseMouseEnter
+    OnMouseLeave = imgCloseMouseLeave
+    ParentShowHint = False
+    ShowHint = True
+    Stretch = True
+  end
+  object imgSettings: TImage
+    Cursor = crHandPoint
+    Left = 414
+    Height = 15
+    Hint = 'Settings'
+    Top = 42
+    Width = 16
+    AutoSize = True
+    OnClick = imgSettingsClick
+    OnMouseEnter = imgSettingsMouseEnter
+    OnMouseLeave = imgSettingsMouseLeave
+    ParentShowHint = False
+    ShowHint = True
+    Stretch = True
+  end
+  object imgWindowMode: TImage
+    Cursor = crHandPoint
+    Left = 414
+    Height = 15
+    Hint = 'Window Mode is OFF'
+    Top = 60
+    Width = 16
+    AutoSize = True
+    OnClick = imgWindowModeClick
+    OnMouseEnter = imgWindowModeMouseEnter
+    OnMouseLeave = imgWindowModeMouseLeave
+    ParentShowHint = False
+    ShowHint = True
+    Stretch = True
+  end
+  object imgSettingsOFF: TImage
+    Cursor = crHandPoint
+    Left = 396
+    Height = 15
+    Hint = 'Settings'
+    Top = 42
+    Width = 16
+    AutoSize = True
+    OnClick = imgSettingsClick
+    ParentShowHint = False
+    ShowHint = True
+    Stretch = True
+    Visible = False
+  end
+  object imgpbbg: TImage
+    Left = 174
+    Height = 34
+    Top = 156
+    Width = 206
+  end
+  object imgSettingsON: TImage
+    Cursor = crHandPoint
+    Left = 378
+    Height = 15
+    Hint = 'Settings'
+    Top = 42
+    Width = 16
+    AutoSize = True
+    OnClick = imgSettingsClick
+    ParentShowHint = False
+    ShowHint = True
+    Stretch = True
+    Visible = False
+  end
+  object lblpbpercentstring: TLabel
+    Left = 353
+    Height = 13
+    Top = 207
+    Width = 27
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0%'
+    Font.Color = clWhite
+    Font.Height = -11
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object lblpbstatusstring: TLabel
+    Left = 24
+    Height = 13
+    Top = 207
+    Width = 324
+    AutoSize = False
+    Caption = 'Initializing . . .'
+    Font.Color = clWhite
+    Font.Height = -11
+    ParentColor = False
+    ParentFont = False
+    OnDblClick = lblpbstatusstringDblClick
+  end
+  object imgStartGame: TImage
+    Cursor = crHandPoint
+    Left = 450
+    Height = 47
+    Top = 18
+    Width = 156
+    AutoSize = True
+    Enabled = False
+    OnClick = imgStartGameClick
+    OnMouseDown = imgStartGameMouseDown
+    OnMouseUp = imgStartGameMouseUp
+  end
+  object imgpb: TImage
+    Left = 90
+    Height = 22
+    Top = 163
+    Width = 108
+    ParentShowHint = False
+  end
+  object updater: TTimer
+    Enabled = False
+    OnTimer = updaterTimer
+    left = 402
+    top = 192
+  end
+end
