@@ -1,5 +1,5 @@
-WarZone MU Season 6 Episode 3 Private Server Files
-==================================================
+WarZone MU 6.3 Server Files
+===========================
 
 Required library for launcher: Synapse
 
