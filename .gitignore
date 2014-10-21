@@ -5,6 +5,9 @@ launcher/client/release/*.exe
 wz_engine/Release/
 wz_engine/Debug/
 wz_engine/ipch/
+wz_client/Release/
+wz_client/Debug/
+wz_client/ipch/
 zDataServer/Release/
 zDataServer/Debug/
 zDataServer/ipch/
