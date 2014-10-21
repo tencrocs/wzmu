@@ -16,7 +16,7 @@ extern  "C"  __declspec(dllexport) void __cdecl wz_init()  // Função API (init
 	carrega.Log_Txt_Hack                = 1; // On/Off Create hack log ( "GameGuard/Log.txt" ) Enable it only for configuration and disable later, cheaters don't need to know what are happening...
 
 	//File names changed
-	carrega.Verifica_Nome 	            = 1; // On/Off = Search [mxmain.exe], [Launcher.exe] file name inside folder. Are NON case-sensitive
+	carrega.Verifica_Nome 	            = 0; // On/Off = Search [mxmain.exe], [Launcher.exe] file name inside folder. Are NON case-sensitive
 	carrega.Nome_do_Main				= "main.exe";       
 	carrega.Nome_do_Launcher			= "Mu.exe";  
 	
@@ -27,9 +27,9 @@ extern  "C"  __declspec(dllexport) void __cdecl wz_init()  // Função API (init
 	//Detectors
 	carrega.ATIVA_TESTE                 = 0; // JUST TOR TESTS
 	carrega.Detecta_Dump				= 1; // On/Off Detect application entrypoint and first 16 HexDump
-	carrega.Detecta_Window				= 1; // On/Off Detect window name
-	carrega.Detecta_ClassName           = 1; // On/Off Detect classeName
-	carrega.Detecta_Heuristica			= 1; // On/Off Detect bad Words
+	carrega.Detecta_Window				= 0; // On/Off Detect window name
+	carrega.Detecta_ClassName           = 0; // On/Off Detect classeName
+	carrega.Detecta_Heuristica			= 0; // On/Off Detect bad Words
 	carrega.Detecta_Inject				= 1; // On/Off Detect dll inject (by dll {name.extension}) 
 	carrega.Detecta_PID			     	= 1; // On/Off Detect application by {name.extension}	
 /*  Detector ANTI-KILL, this one need some extra configuration. So, lets do it!
@@ -38,7 +38,7 @@ extern  "C"  __declspec(dllexport) void __cdecl wz_init()  // Função API (init
 	3 - Configure [carrega.Minimum_thread], turn ON [carrega.Dont_kill_yet] and try to kill some Threads.
 	4 - Remember or consider [Minimizer.dll] attached... */
 	carrega.Detecta_Kill                = 0;  // On/Off Detect active codex.dll tread count, this prevent desactivate dll's antihack-threads whit process explorer, process hacker etc... 
-	carrega.Dont_kill_yet               = 1;  // ON/Off 1 = Turn ON Anti-kill splash (ExitProcess) / 0 = Turn OFF Anti-kill splash (ExitProcess)
+	carrega.Dont_kill_yet               = 0;  // ON/Off 1 = Turn ON Anti-kill splash (ExitProcess) / 0 = Turn OFF Anti-kill splash (ExitProcess)
 	carrega.Minimum_thread			    = 10; // Minimum thread running whitout splash. 
 
 	//NEED CONFIGURE [ Serial_Versao.cpp ] In this case: the mxmain.exe are version 1.01e
