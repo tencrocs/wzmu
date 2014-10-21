@@ -4,7 +4,7 @@ object frmMain: TfrmMain
   Top = 243
   Width = 635
   BorderStyle = bsNone
-  Caption = 'warzonemu.com'
+  Caption = 'MU'
   ClientHeight = 281
   ClientWidth = 635
   Color = 4473924
