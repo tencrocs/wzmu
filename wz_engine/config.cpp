@@ -81,6 +81,7 @@ extern  "C"  __declspec(dllexport) void __cdecl wz_init()  // Função API (init
 	carrega.MinimizerDLL    			= 0; // Start some dll by name (in Gameguard folder), use it for start some Minimizer, autoclick...
 	carrega.Nome_da_DLL		         	= "GameGuard/Minimizer.dll";  
 	
+	carrega.Detecta_Speed = 1; // speed hack detect
 
 }
 BOOL APIENTRY DllMain( HMODULE hModule,
