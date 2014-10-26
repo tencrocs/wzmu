@@ -1,5 +1,4 @@
-WarZone MU 6.3 Server Files<br />
-===========================<br /><br />
+WZMU Season 6 Episode 3 Sources<br /><br />
 
 Required library for launcher: Synapse<br /><br />
 
